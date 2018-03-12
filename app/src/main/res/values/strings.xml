@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="app_name">智码爱家</string>
+
+    <!--登录页 start-->
+    <string name="login_button_text">登录</string>
+    <string name="login_username_hint">用户名</string>
+    <string name="login_password_hint">密码</string>
+    <string name="username_hint">用户名</string>
+    <string name="password_hint">密码</string>
+    <string name="do_password_hint">业务密码</string>
+    <string name="title_activity_main">智码爱家</string>
+    <string name="server_ip_hint">服务器地址</string>
+    <!--登录页 end-->
+
+    <!--注册-->
+    <string name="individual_extra">individual</string>
+
+    <!--合同-->
+    <string name="contract_id_extra">contractId</string>
+    <string name="user_id_extra">userId</string>
+    <string name="contract_entity_extra">contractEntity</string>
+
+    <!--商品信息-->
+    <string name="product_code_extra">product_code</string>
+    <!--nav drawer start-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_camera_title">扫码</string>
+    <!--nav drawer end-->
+
+    <!--toolbar start-->
+    <string name="action_settings">设置</string>
+    <!--toolbar end-->
+
+    <!--二维码 start-->
+    <string name="zxing_result_failed">二维码解析失败</string>
+    <string name="zxing_result">QRCODE_RESULT</string>
+    <string name="qrcode_result_okBtn">验真</string>
+    <string name="qrcode_result_cancleBtn">返回</string>
+    <!--二维码 end-->
+</resources>

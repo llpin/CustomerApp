@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.activity">
+
+    <!-- 网络权限 start -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 网络权限 end -->
+
+
+    <!-- 二维码权限 start -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 二维码权限 end -->
+    <application
+        android:name="com.common.application.UserApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.version" -->
+        <!-- android:value="@integer/google_play_services_version" /> -->
+
+        <activity android:name="com.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.activity.RegisterActivity" />
+        <activity android:name="com.activity.IndividualActivity" />
+        <activity android:name="com.activity.TelephoneActivity" />
+        <activity android:name="com.activity.ProductInfoActivity" />
+    
+        <activity android:name="com.activity.MineActivity" />
+        <activity android:name="com.activity.ContinuousCaptureActivity" />
+        <activity android:name="com.activity.ContractPartActivity" />
+        <activity android:name="com.activity.ContractActivity"></activity>
+    </application>
+
+</manifest>
