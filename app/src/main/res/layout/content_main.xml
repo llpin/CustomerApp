@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="扫码保真"/>
+            android:text="扫码验真"/>
 
     </LinearLayout>
 

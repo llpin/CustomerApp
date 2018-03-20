@@ -3,13 +3,14 @@
     <string name="app_name">智码爱家</string>
 
     <!--登录页 start-->
+    <string name="title_activity_main">智码爱家-消费者</string>
     <string name="login_button_text">登录</string>
     <string name="login_username_hint">用户名</string>
     <string name="login_password_hint">密码</string>
     <string name="username_hint">用户名</string>
     <string name="password_hint">密码</string>
     <string name="do_password_hint">业务密码</string>
-    <string name="title_activity_main">智码爱家</string>
+
     <string name="server_ip_hint">服务器地址</string>
     <!--登录页 end-->
 

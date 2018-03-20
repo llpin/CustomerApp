@@ -32,7 +32,9 @@
         <!-- android:name="com.google.android.gms.version" -->
         <!-- android:value="@integer/google_play_services_version" /> -->
 
-        <activity android:name="com.activity.LoginActivity">
+        <activity
+            android:name="com.activity.LoginActivity"
+            android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,15 +45,23 @@
             android:name="com.activity.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.activity.RegisterActivity" />
-        <activity android:name="com.activity.IndividualActivity" />
-        <activity android:name="com.activity.TelephoneActivity" />
-        <activity android:name="com.activity.ProductInfoActivity" />
+        <activity android:name="com.activity.RegisterActivity"
+            android:label="@string/title_activity_main"/>
+        <activity android:name="com.activity.IndividualActivity"
+            android:label="@string/title_activity_main"/>
+        <activity android:name="com.activity.TelephoneActivity"
+            android:label="@string/title_activity_main"/>
+        <activity android:name="com.activity.ProductInfoActivity"
+            android:label="@string/title_activity_main"/>
     
-        <activity android:name="com.activity.MineActivity" />
+        <activity android:name="com.activity.MineActivity"
+            android:label="@string/title_activity_main"/>
         <activity android:name="com.activity.ContinuousCaptureActivity" />
-        <activity android:name="com.activity.ContractPartActivity" />
-        <activity android:name="com.activity.ContractActivity"></activity>
+        <activity android:name="com.activity.ContractPartActivity"
+            android:label="@string/title_activity_main"/>
+        <activity
+            android:name="com.activity.ContractActivity"
+            android:label="@string/title_activity_main"/>
     </application>
 
 </manifest>

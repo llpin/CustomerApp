@@ -6,10 +6,11 @@ import android.widget.TextView;
 import com.common.base.BaseActivity;
 import com.common.interfaces.BaseInter;
 import com.common.pojo.EmployeeEntityResponse;
+import com.common.pojo.IndividualEntityResponse;
 import com.common.pojo.UserVoResponse;
 
 public class MineActivity extends BaseActivity implements BaseInter{
-    EmployeeEntityResponse mEmployee;
+    IndividualEntityResponse mIndividual;
 
     TextView mUsernameText;
     TextView mUsertypeText;
@@ -24,7 +25,7 @@ public class MineActivity extends BaseActivity implements BaseInter{
         try{
             UserVoResponse user = getUserApplication().getUserVo();
             if(user != null)
-                mEmployee = user.getEmployee();
+                mIndividual = user.getIndividual();
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -35,17 +36,17 @@ public class MineActivity extends BaseActivity implements BaseInter{
 
     @Override
     public void initForm() {
-        if(mEmployee != null){
+        if(mIndividual != null){
             try{
                 mUsernameText = (TextView)findViewById(R.id.username);
                 mUsertypeText = (TextView)findViewById(R.id.usertype);
                 mName = (TextView)findViewById(R.id.name);
                 mTelephone = (TextView)findViewById(R.id.telephone);
 
-                mUsernameText.setText(mEmployee.getUser().getUsername());
-                mUsertypeText.setText(mEmployee.getUser().getPlatformMainType().getName());
-                mName.setText(mEmployee.getName());
-                mTelephone.setText(mEmployee.getTelephone());
+                mUsernameText.setText(mIndividual.getUser().getUsername());
+                mUsertypeText.setText(mIndividual.getUser().getPlatformMainType().getName());
+                mName.setText(mIndividual.getName());
+                mTelephone.setText(mIndividual.getTelephone());
             }catch (Exception e){
                 e.printStackTrace();
             }
